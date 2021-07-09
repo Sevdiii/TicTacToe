@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tictactoe.css">
+    <title>TicTacToe</title>
+</head>
+
+<body>
+
+    <button onclick="restart()" class="btn d-none" id="restart-btn">Restart</button>
+
+    <img class="gameoverr d-none" id="gameover" src="./pic/gameover.png" alt="">
+
+    <div class="players">
+        <div class="player1 " id="turn-player1">
+            <img src="./pic/circle.png" alt="">
+            <p>Player 1</p>
+        </div>
+
+        <div class="player2 player-inactive " id="turn-player2">
+            <img src="./pic/x.png" alt="">
+            <p>Player 2</p>
+        </div>
+
+
+    </div>
+
+    <div id="line-0" class="horizontal-line" style="top: 204px;"></div>
+    <div id="line-1" class="horizontal-line" style="top: 340px;"></div>
+    <div id="line-2" class="horizontal-line" style="top: 480px;"></div>
+
+    <div id="line-3" class="horizontal-line vertical-line" style="left: 960px; top: 350px;"></div>
+    <div id="line-4" class="horizontal-line vertical-line" style="left: 440px; top: 350px;"></div>
+    <div id="line-5" class="horizontal-line vertical-line" style="left: 580px; top: 350px;"></div>
+
+    <div id="line-6" class="horizontal-line line-45deg" style="left: 580px; top: 350px; transform: rotate(45deg) scaleX(0.0);;left: 450px;"></div>
+    <div id="line-7" class="horizontal-line line-45-deg-negativ" style="left: 580px; top: 350px; transform: rotate(-45deg) scaleX(0.0);; left: 430px;"></div>
+
+
+
+    <div class="table">
+
+
+        <table>
+            <tr>
+                <td onclick="fillfield(0)"><img id="circle0" class="table-pic  d-none  " src="./pic/circle.png ">
+                    <img id="x0" class="table-pic d-none" src="./pic/x.png ">
+                </td>
+
+                <td onclick="fillfield(1)"><img id="circle1" class="table-pic  d-none" src="./pic/circle.png ">
+                    <img id="x1" class="table-pic d-none" src="./pic/x.png ">
+                </td>
+
+                <td onclick="fillfield(2)"><img id="circle2" class="table-pic d-none " src="./pic/circle.png ">
+                    <img id="x2" class="table-pic d-none" src="./pic/x.png ">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td onclick="fillfield(3)"><img id="circle3" class="table-pic d-none " src="./pic/circle.png ">
+                    <img id="x3" class="table-pic d-none" src="./pic/x.png ">
+                </td>
+                <td onclick="fillfield(4)"><img id="circle4" class="table-pic d-none" src="./pic/circle.png ">
+                    <img id="x4" class="table-pic d-none" src="./pic/x.png ">
+                </td>
+                <td onclick="fillfield(5)"><img id="circle5" class="table-pic d-none " src="./pic/circle.png ">
+                    <img id="x5" class="table-pic d-none" src="./pic/x.png ">
+                </td>
+            </tr>
+
+            <tr>
+                <td onclick="fillfield(6)"><img id="circle6" class="table-pic  d-none" src="./pic/circle.png ">
+                    <img id="x6" class="table-pic d-none" src="./pic/x.png ">
+                </td>
+                <td onclick="fillfield(7)"><img id="circle7" class="table-pic d-none " src="./pic/circle.png ">
+                    <img id="x7" class="table-pic d-none" src="./pic/x.png ">
+                </td>
+                <td onclick="fillfield(8)"><img id="circle8" class="table-pic d-none " src="./pic/circle.png ">
+                    <img id="x8" class="table-pic d-none" src="./pic/x.png ">
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="./tictactoe.js "></script>
+</body>
+
+</html>
