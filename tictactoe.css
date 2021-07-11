@@ -3,10 +3,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba(59, 176, 206, 0.4);
 }
 
 .table {
     margin-top: 50px;
+    position: relative;
 }
 
 table {
@@ -97,25 +99,26 @@ table tr td:last-child {
     height: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    width: 350px;
-    top: 204px;
-    transform: scaleY(0.0);
+    width: 100%;
+    transform: scaleX(0.0);
     transition: transform 225ms ease-in-out;
 }
 
 .vertical-line {
-    transform: rotate(90deg);
-    transform: scaleX(0.0);
-    width: 350px;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 10px;
+    transform: scaleY(0.0);
+    transition: transform 225ms ease-in-out;
 }
 
-#gameover {
-    position: absolute;
-    top: 430px;
-    left: 200px;
-    right: 0;
-    width: 30%;
-    animation: zoomIn 225ms ease-in-out;
+.line-45deg {
+    transform: rotate(45deg);
+}
+
+.line-45-deg-negativ {
+    transform: rotate(-45deg);
 }
 
 @keyframes zoomIn {
@@ -137,10 +140,22 @@ table tr td:last-child {
     font-size: 20px;
     width: 150px;
     border-radius: 10px;
-    position: absolute;
-    top: 720px;
 }
 
 .btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#gameover {
+    width: 400px;
+    top: 5%;
+    left: 5%;
+    position: absolute;
 }

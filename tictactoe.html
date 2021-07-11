@@ -11,9 +11,9 @@
 
 <body>
 
-    <button onclick="restart()" class="btn d-none" id="restart-btn">Restart</button>
 
-    <img class="gameoverr d-none" id="gameover" src="./pic/gameover.png" alt="">
+
+
 
     <div class="players">
         <div class="player1 " id="turn-player1">
@@ -29,20 +29,23 @@
 
     </div>
 
-    <div id="line-0" class="horizontal-line" style="top: 204px;"></div>
-    <div id="line-1" class="horizontal-line" style="top: 340px;"></div>
-    <div id="line-2" class="horizontal-line" style="top: 480px;"></div>
-
-    <div id="line-3" class="horizontal-line vertical-line" style="left: 960px; top: 350px;"></div>
-    <div id="line-4" class="horizontal-line vertical-line" style="left: 440px; top: 350px;"></div>
-    <div id="line-5" class="horizontal-line vertical-line" style="left: 580px; top: 350px;"></div>
-
-    <div id="line-6" class="horizontal-line line-45deg" style="left: 580px; top: 350px; transform: rotate(45deg) scaleX(0.0);;left: 450px;"></div>
-    <div id="line-7" class="horizontal-line line-45-deg-negativ" style="left: 580px; top: 350px; transform: rotate(-45deg) scaleX(0.0);; left: 430px;"></div>
-
-
 
     <div class="table">
+
+        <div id="line-0" class="horizontal-line" style="top: calc(133px / 2); left: 0;"></div>
+        <div id="line-1" class="horizontal-line" style="top: 200.5px; left: 0;"></div>
+        <div id="line-2" class="horizontal-line" style="top:333.5px; left: 0;"></div>
+
+        <div id="line-3" class="vertical-line" style="left: calc(133px /2); top:0;"></div>
+        <div id="line-4" class="vertical-line" style="top:0; left:200.5px"></div>
+        <div id="line-5" class="vertical-line" style="top:0; left: 333.5px;"></div>
+
+        <div id="line-6" class=" horizontal-line line-45deg" style=" top:200.5px; left:0; transform: scaleX(0);"></div>
+        <div id="line-7" class=" horizontal-line line-45-deg-negativ" style="top: 200px; left:0; transform: scale(0);"></div>
+
+
+
+
 
 
         <table>
@@ -85,8 +88,18 @@
                 </td>
             </tr>
         </table>
+        <div class="button">
+            <div class="gameover-image">
+                <img class="gameoverr d-none" id="gameover" src="./pic/gameover.png" alt="">
+            </div>
+            <div class="button">
+                <button onclick="restart()" class="btn d-none" id="restart-btn">Restart</button>
+            </div>
+        </div>
 
     </div>
+
+
 
     <script src="./tictactoe.js "></script>
 </body>
